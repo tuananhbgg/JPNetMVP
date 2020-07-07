@@ -48,26 +48,6 @@ public class SeeMoreNewsPresenter {
         demoService = new DemoService().getInstant();
         requestHomeModel = new RequestHomeModel(serverToken, 1, pageSize);
 
-/*        iDemoService.getNewsByAllCategory(requestHomeModel).enqueue(new Callback<NewsCategoryResponseModel>() {
-            @Override
-            public void onResponse(Call<NewsCategoryResponseModel> call, Response<NewsCategoryResponseModel> response) {
-                response.body().getBody();
-                for (int i = 0; i < response.body().getBody().size(); i++) {
-                    if (response.body().getBody().get(i).getCategoryName().equals(theLoaiTin)) {
-                        for (int j = 0; j < response.body().getBody().get(i).getNews().size(); j++) {
-                            models.add(response.body().getBody().get(i).getNews().get(j));
-                        }
-                    }
-                }
-                adapter.notifyDataSetChanged();
-                iSeeMoreNewsActivity.getNewsByAllCategory(adapter);
-            }
-            @Override
-            public void onFailure(Call<NewsCategoryResponseModel> call, Throwable t) {
-            }
-        });
- */
-
         models = new ArrayList<>();
         disposableGetNewByCategory.add(demoService.create(IDemoService.class)
                 .getNewsByAllCategory(requestHomeModel)
