@@ -135,22 +135,6 @@ public class HomePresenter {
     }
 
     public void getListImageBanner() {
-        //final BannerModel bannerModel = new BannerModel();
-//        iDemoService.getListImageBanner(new RequestHomeModel(serverToken, 0, 0)).enqueue(new Callback<BannerModel>() {
-//            @Override
-//            public void onResponse(Call<BannerModel> call, Response<BannerModel> response) {
-//                bannerModel.setBody(response.body().getBody());
-//                if (bannerModel != null) {
-//                    iHomeFragment.loadSlideImage(bannerModel);
-//                }
-//                totalItem = response.body().getBody().size();
-//            }
-//
-//            @Override
-//            public void onFailure(Call<BannerModel> call, Throwable t) {
-//                Toast.makeText(context, t.getMessage(), Toast.LENGTH_SHORT).show();
-//            }
-//        });
         compositeDisposable.add(retrofit.create(IDemoService.class)
                 .getListImageBanner(new RequestHomeModel(serverToken, 0, 0))
                 .subscribeOn(Schedulers.io())
@@ -182,22 +166,6 @@ public class HomePresenter {
     }
 
     public void getNewsCategory() {
-//        final NewsCategoryResponseModel categoryResponseModel = new NewsCategoryResponseModel();
-//        iDemoService.getNewsByAllCategory(new RequestHomeModel(serverToken, 1, 3)).enqueue(new Callback<NewsCategoryResponseModel>() {
-//            @Override
-//            public void onResponse(Call<NewsCategoryResponseModel> call, Response<NewsCategoryResponseModel> response) {
-//
-//                categoryResponseModel.setBody(response.body().getBody());
-//                if (categoryResponseModel != null) {
-//                    iHomeFragment.getNewsCategory(categoryResponseModel);
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(Call<NewsCategoryResponseModel> call, Throwable t) {
-//            }
-//        });
-
         compositeDisposable.add(retrofit.create(IDemoService.class)
                 .getNewsByAllCategory(new RequestHomeModel(serverToken, 1, 3))
                 .subscribeOn(Schedulers.io())
@@ -212,18 +180,6 @@ public class HomePresenter {
     }
 
     public void getHotNew() {
-//        final HotNewModel hotNewModel = new HotNewModel();
-//        iDemoService.getHotNew(new RequestHomeModel(serverToken, 0, 0)).enqueue(new Callback<HotNewModel>() {
-//            @Override
-//            public void onResponse(Call<HotNewModel> call, Response<HotNewModel> response) {
-//                hotNewModel.setBody(response.body().getBody());
-//                iHomeFragment.getHotNew(hotNewModel, response.body().getBody().getDiscussQuestions().get(0));
-//            }
-//            @Override
-//            public void onFailure(Call<HotNewModel> call, Throwable t) {
-//            }
-//        });
-
         disposable.add(retrofit.create(IDemoService.class)
                 .getHotNew(new RequestHomeModel(serverToken, 0, 0))
                 .subscribeOn(Schedulers.io())
