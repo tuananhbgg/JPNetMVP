@@ -12,9 +12,9 @@ import android.view.Window;
 import androidx.appcompat.app.AlertDialog;
 
 import com.example.jpnetmvp.CheckNetWork;
+import com.example.jpnetmvp.R;
 import com.example.jpnetmvp.model.LoginResponseModel;
 import com.example.jpnetmvp.model.UserModel;
-import com.example.jpnetmvp.R;
 import com.example.jpnetmvp.service.DemoService;
 import com.example.jpnetmvp.service.IDemoService;
 
@@ -29,7 +29,6 @@ public class LoginPresenter {
     private String SERVER_TOKEN = "serverToken";
     private ILoginActivity iLoginView;
     private Retrofit retrofit;
-    //private IDemoService iDemoService;
     public CompositeDisposable compositeDisposable;
     private CheckNetWork checkNetWork;
     private Context context;
