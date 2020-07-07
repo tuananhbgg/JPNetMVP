@@ -7,7 +7,6 @@ import android.os.Handler;
 import com.example.jpnetmvp.adapter.SeeMoreAdapter;
 import com.example.jpnetmvp.model.NewsCategoryResponseModel;
 import com.example.jpnetmvp.model.RequestHomeModel;
-import com.example.jpnetmvp.presenter.ISeeMoreNewsActivity;
 import com.example.jpnetmvp.service.DemoService;
 import com.example.jpnetmvp.service.IDemoService;
 
