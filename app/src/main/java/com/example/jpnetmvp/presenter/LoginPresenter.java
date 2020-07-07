@@ -29,7 +29,6 @@ public class LoginPresenter {
     private String SERVER_TOKEN = "serverToken";
     private ILoginActivity iLoginView;
     private Retrofit retrofit;
-    //private IDemoService iDemoService;
     public CompositeDisposable compositeDisposable;
     private CheckNetWork checkNetWork;
     private Context context;
@@ -82,30 +81,6 @@ public class LoginPresenter {
                             }
                         }
                     }));
-//            iDemoService.login(new UserModel(userName, "", "", password, 1)).enqueue(new Callback<LoginResponseModel>() {
-//                @Override
-//                public void onResponse(Call<LoginResponseModel> call, Response<LoginResponseModel> response) {
-//                    if (response.body().getStatus() == 0) {
-//                        editor.putString(SERVER_TOKEN, response.body().getBody().getServerToken());
-//                        editor.commit();
-//                        iLoginView.loginSuccesful();
-//                        new Handler().postDelayed(new Runnable() {
-//                            @Override
-//                            public void run() {
-//                                processBarDialog.dismiss();
-//                            }
-//                        }, 500);
-//                    } else {
-//                        iLoginView.loginFail(response.body().getMessage());
-//                        processBarDialog.dismiss();
-//                    }
-//                }
-//
-//                @Override
-//                public void onFailure(Call<LoginResponseModel> call, Throwable t) {
-//                    processBarDialog.dismiss();
-//                }
-//            });
         } else {
             iLoginView.loginFail("Vui lòng kết nối Internet");
         }
