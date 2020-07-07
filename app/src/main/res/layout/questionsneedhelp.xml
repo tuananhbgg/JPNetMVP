@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/helveticaneue"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/title_cauhoi"
+            android:textColor="#000"/>
+
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_span="4"
+            android:background="@drawable/custom_view">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvImg"
+                android:layout_margin="4dp"
+                android:layout_width="36dp"
+                app:cardCornerRadius="16dp"
+                android:layout_height="36dp">
+                <ImageView
+                    android:id="@+id/img_avatar"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/avatar" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:fontFamily="@font/helveticaneue"
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/cvImg"
+                android:text="@string/tv_tennguoidung"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTG"
+                android:fontFamily="@font/helveticaneue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_toRightOf="@+id/cvImg"
+                android:text="@string/tv_trangthai"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:fontFamily="@font/helveticaneue"
+                android:id="@+id/tvCauHoi"
+                style="@style/chuthuong"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTG"
+                android:layout_margin="8dp"
+                android:text="@string/title_cauhoicantraloi"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/btnTraLoi"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/helveticaneue"
+                android:layout_height="32dp"
+                android:layout_below="@id/tvCauHoi"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/custom_btn"
+                android:gravity="center"
+                android:text="@string/title_traloingay"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+</LinearLayout>

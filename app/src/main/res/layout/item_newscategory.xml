@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/color_white">
+
+        <TextView
+            android:id="@+id/tvNewsCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/helveticaneue"
+            android:padding="4dp"
+            android:text="@string/title_tinticmoinhat"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvNewsCateGory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:overScrollMode="never" />
+
+
+        <Button
+
+            android:id="@+id/btnNewsCategory"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_span="4"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/helveticaneue"
+            android:text="@string/btn_xemthem"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/custom_view"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvplace"
+        android:textColor="#000"
+        android:fontFamily="@font/helveticaneue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Bạn sống ở địa điểm nào?"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvplace"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:textAllCaps="false"
+            android:fontFamily="@font/helveticaneue"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnJapan"
+            android:background="@drawable/custom_btnlogin"
+            android:textColor="@color/color_white"
+            android:text="Nhật Bản"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"/>
+        <Button
+            android:id="@+id/btnVietNam"
+            android:textAllCaps="false"
+            android:fontFamily="@font/helveticaneue"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/custom_btnlogin"
+            android:textColor="@color/color_white"
+            android:text="Việt Nam"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

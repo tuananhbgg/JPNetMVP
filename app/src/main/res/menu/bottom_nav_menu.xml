@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_trangchu"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_trangchu" />
+
+    <item
+        android:id="@+id/nav_tinnhan"
+        android:icon="@drawable/ic_message"
+        android:title="@string/title_tinnhan" />
+
+    <item
+        android:id="@+id/nav_thaoluan"
+        android:icon="@drawable/ic_thaoluan"
+        android:title="@string/title_thaoluan" />
+    <item
+        android:id="@+id/nav_thongbao"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/title_thongbao" />
+
+    <item
+        android:id="@+id/nav_taikhoan"
+        android:icon="@drawable/ic_person"
+        android:title="@string/title_taikhoan" />
+
+</menu>

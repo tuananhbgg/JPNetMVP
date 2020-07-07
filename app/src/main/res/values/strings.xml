@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">JPNetMVP</string>
+    <string name="title_trangchu">Trang chủ</string>
+    <string name="title_tinnhan">Tin nhắn</string>
+    <string name="title_thaoluan">Thảo luận</string>
+    <string name="title_thongbao">Thông báo</string>
+    <string name="title_taikhoan">Tài khoản</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="title_banquanhday">Bạn quanh đây</string>
+    <string name="title_diadiem">Địa điểm</string>
+    <string name="title_donhang">Đơn hàng</string>
+    <string name="title_vieclam">Việc làm</string>
+    <string name="title_hoctiengnhat">Học tiếng Nhật</string>
+    <string name="title_hangnhat">Hàng Nhật</string>
+    <string name="title_dichgiongnoi">Dịch giọng nói</string>
+    <string name="title_sukien">Sự kiện</string>
+    <string name="title_tinnoibat">TIN NỔI BẬT</string>
+    <string name="title_cauhoi">CÂU HỎI CẦN BẠN GIÚP</string>
+    <string name="title_tinticmoinhat">TIN TỨC</string>
+    <string name="title_traloingay">Trả lời ngay</string>
+    <string name="title_cauhoicantraloi">Cho em hỏi, sang năm em bay mà giờ trong đầu thì không có tiếng Nhật thì liệu học có kịp không, với học ở trường nào thì uy tín. Em xin cảm ơn anh chị.</string>
+    <string name="btn_xemthem">Xem thêm</string>
+    <string name="tv_tennguoidung">Minh Ngọc</string>
+    <string name="tv_trangthai">1 giờ trước - Du học</string>
+    <string name="tv_tintuctonghop">TIN TỨC TỔNG HỢP</string>
+    <string name="tv_chiasekinhnghiem">CHIA SẺ KINH NGHIỆM</string>
+    <string name="title_tintuc">Bài 1 làm quen với tiếng Nhật (Nhà vệ sinh ở đâu ạ)</string>
+    <string name="title_news">Nhật mở cửa, lao động Việt Nam có cơ hội định cư lâu dài tại đất nước mặt trời mọc.</string>
+    <string name="title_slogan">Xóa nhòa khoảng cách Việt - Nhật</string>
+    <string name="title_login">Đăng Nhập</string>
+    <string name="title_send">Gửi</string>
+    <string name="title_registration">Đăng ký</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

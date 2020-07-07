@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="138dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgHotNew"
+                android:scaleType="fitXY"
+                android:src="@drawable/anhtintuc"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"/>
+            <TextView
+                style="@style/chuthuong"
+                android:fontFamily="@font/helveticaneue"
+                android:id="@+id/tv_TenTieuDe"
+                android:layout_below="@+id/imgHotNew"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="#000"
+                android:lines="3"
+                android:text="@string/title_tintuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_Trangthai"
+                android:layout_below="@id/tv_TenTieuDe"
+                android:fontFamily="@font/helveticaneue"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="1 giờ trước"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:paddingLeft="4dp"
+                android:fontFamily="@font/helveticaneue"
+                android:paddingRight="4dp"
+                android:textSize="10sp"
+                android:textColor="@color/color_white"
+                android:background="@color/colorPrimary"
+                android:text="Mới nhất"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
