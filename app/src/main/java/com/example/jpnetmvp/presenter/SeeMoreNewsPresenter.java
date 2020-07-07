@@ -7,7 +7,6 @@ import android.os.Handler;
 import com.example.jpnetmvp.adapter.SeeMoreAdapter;
 import com.example.jpnetmvp.model.NewsCategoryResponseModel;
 import com.example.jpnetmvp.model.RequestHomeModel;
-import com.example.jpnetmvp.presenter.ISeeMoreNewsActivity;
 import com.example.jpnetmvp.service.DemoService;
 import com.example.jpnetmvp.service.IDemoService;
 
@@ -81,26 +80,6 @@ public class SeeMoreNewsPresenter {
             public void run() {
                 pageNumber = pageNumber + 1;
                 requestHomeModel.setPageNumber(pageNumber);
-
-/*                iDemoService.getNewsByAllCategory(requestHomeModel).enqueue(new Callback<NewsCategoryResponseModel>() {
-                    @Override
-                    public void onResponse(Call<NewsCategoryResponseModel> call, Response<NewsCategoryResponseModel> response) {
-                        if (response.body().getBody().size() > 0) {
-                            for (int i = 0; i < response.body().getBody().size(); i++) {
-                                if (response.body().getBody().get(i).getCategoryName().equals(theLoaiTin)) {
-                                    for (int j = 0; j < response.body().getBody().get(i).getNews().size(); j++) {
-                                        models.add(response.body().getBody().get(i).getNews().get(j));
-                                    }
-                                }
-                            }
-                            adapter.notifyDataSetChanged();
-                        }
-                    }
-                    @Override
-                    public void onFailure(Call<NewsCategoryResponseModel> call, Throwable t) {
-                    }
-                });
-*/
                 disposableGetNewByCategory.add(demoService.create(IDemoService.class)
                         .getNewsByAllCategory(requestHomeModel)
                         .subscribeOn(Schedulers.io())
